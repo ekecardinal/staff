@@ -23,7 +23,7 @@ function Register() {
     } else {
       navigate('/')
     }
-  }, [auth.currentUser, navigate])
+  }, [user, navigate])
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser)
